@@ -11,9 +11,27 @@
         margin: 0;
         padding: 0;
       }
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         box-sizing: border-box;
         font-family: "Source Sans Pro", Arial, sans-serif;
+        text-align: center;
+      }
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
       }
     </style>
   </head>
@@ -26,26 +44,29 @@
         <li><a href="#Hero">Home</a></li>
         <li><a href="#Work">Work</a></li>
         <li><a href="#Portfolio">Portfolio</a></li>
-        <li><a>Contact</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
     </header>
     <!-- Hero -->
     <article
-      class="flex flex-col justify-center items-center gap-4 py-32 px-4 shadow-md"
+      class="flex flex-col justify-center items-center gap-4 py-12 md:py-32 px-4 shadow-md"
       id="Hero"
     >
-      <img src="./assets/sasuke.png" class="rounded-full border-4 w-96 h-96" />
+      <img
+        src="./assets/sasuke.png"
+        class="rounded-full border-4 w-64 h-64 md:w-96 md:h-96"
+      />
       <div class="flex flex-col gap-8 text-center">
-        <h1 class="text-6xl text-[#888]">
+        <h1 class="text-4xl md:text-6xl text-[#888]">
           Hi. I'm <b class="text-[#3e3e3e]">Sasuke Uchiha.</b>
         </h1>
-        <h2 class="text-xl text-[#888] max-w-[800px]">
+        <h2 class="text-base md:text-xl text-[#888] max-w-[800px]">
           And this is <b class="text-[#3e3e3e]">Miniport</b>, a free, fully
           responsive HTML5 site template designed by AJ for HTML5 UP & released
           under the CCA license.
         </h2>
         <button
-          class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-3xl text-white py-4 px-10 border-x-slate-800 shadow-sm"
+          class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-xl md:text-3xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
         >
           Learn about what i do
         </button>
@@ -54,8 +75,10 @@
     <!-- Hero ^^^^ Above ^^^^^^ -->
     <!-- Work -->
     <div class="flex flex-col items-center gap-4 py-32 shadow-md" id="Work">
-      <h2 class="text-3xl text-slate-900">Here's all the stuff I do.</h2>
-      <h3 class="text-2xl text-gray-400 text-center">
+      <h2 class="text-2xl md:text-3xl text-slate-900">
+        Here's all the stuff I do.
+      </h2>
+      <h3 class="text-xl md:text-2xl text-gray-400 text-center">
         Odio turpis amet sed consequat eget posuere consequat.
       </h3>
       <div>
@@ -64,8 +87,8 @@
             class="flex flex-col items-center text-center py-12 px-8 max-w-xs shadow-lg"
           >
             <section class="h-32 w-32 bg-green-900"></section>
-            <h4 class="text-2xl md:text-3xl text-slate-900">Consequat lorem</h4>
-            <p class="text-gray-500">
+            <h4 class="text-xl md:text-3xl text-slate-900">Consequat lorem</h4>
+            <p class="text-gray-500 text-base md:text-xl">
               Ornare nulla proin odio consequat sapien vestibulum ipsum primis
               sed amet consequat lorem dolore.
             </p>
@@ -74,10 +97,10 @@
             class="flex flex-col items-center text-center py-12 px-8 max-w-xs shadow-lg"
           >
             <section class="h-32 w-32 bg-green-900"></section>
-            <h4 class="text-2xl md:text-3xl text-slate-900">
+            <h4 class="text-xl md:text-3xl text-slate-900">
               Lorem dolor tempus
             </h4>
-            <p class="text-gray-500">
+            <p class="text-gray-500 md:text-xl">
               Ornare nulla proin odio consequat sapien vestibulum ipsum primis
               sed amet consequat lorem dolore.
             </p>
@@ -86,19 +109,19 @@
             class="flex flex-col items-center text-center py-12 px-8 max-w-xs shadow-lg"
           >
             <section class="h-32 w-32 bg-green-900"></section>
-            <h4 class="text-2xl md:text-3xl text-slate-900">Feugiat posuere</h4>
-            <p class="text-gray-500">
+            <h4 class="text-xl md:text-3xl text-slate-900">Feugiat posuere</h4>
+            <p class="text-gray-500 md:text-xl">
               Ornare nulla proin odio consequat sapien vestibulum ipsum primis
               sed amet consequat lorem dolore.
             </p>
           </li>
         </ul>
       </div>
-      <p class="text-2xl text-gray-600">
+      <p class="text-base md:text-2xl text-gray-600">
         Lorem ipsum dolor sit sapien vestibulum ipsum primis?
       </p>
       <button
-        class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-3xl text-white py-4 px-10 border-x-slate-800 shadow-sm"
+        class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-xl md:text-3xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
       >
         See some of my recent work
       </button>
@@ -108,17 +131,19 @@
     <!-- Portfolio -->
 
     <div
-      class="flex flex-col items-center gap-4 py-32 shadow-md"
+      class="flex flex-col items-center gap-4 py-12 md:py-32 shadow-md"
       id="Portfolio"
     >
-      <h2 class="text-3xl text-slate-900">
+      <h2 class="text-2xl md:text-3xl text-slate-900">
         Here’s some stuff I made recently.
       </h2>
-      <h3 class="text-2xl text-gray-500 text-center">
+      <h3 class="text-lg md:text-2xl text-gray-500 text-center">
         Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.
       </h3>
-      <div>
-        <ul class="flex md:flex-row flex-col justify-center flex-wrap gap-8">
+      <div class="pt-4">
+        <ul
+          class="flex md:flex-row flex-col justify-center flex-wrap gap-8 max-w-[1100px]"
+        >
           <li
             class="flex flex-col items-center text-center px-1 max-w-xs shadow-lg"
           >
@@ -185,7 +210,53 @@
           </li>
         </ul>
       </div>
+      <p class="text-base md:text-2xl text-gray-600">
+        Lorem ipsum dolor sit sapien vestibulum ipsum primis?
+      </p>
+      <button
+        class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-xl md:text-3xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
+      >
+        Get in touch with me
+      </button>
     </div>
     <!-- Portfolio ^^^^ Above ^^^^^^ -->
+
+    <!-- Contact -->
+    <div
+      class="flex flex-col items-center gap-4 py-12 md:py-32 shadow-md bg-[#303030] text-white"
+      id="Contact"
+    >
+      <h2 class="text-2xl md:text-4xl text-white">
+        Have me make stuff for you.
+      </h2>
+      <h3 class="text-xl md:text-2xl text-gray-500 text-center">
+        Ornare nulla proin odio consequat sapien vestibulum ipsum.
+      </h3>
+      <form
+        class="grid grid-cols-2 gap-4 p-2 md:p-0 text-[#bbb] text-base md:text-xl max-w-[1000px]"
+      >
+        <input class="bg-[#282828] p-4 rounded-2xl" placeholder="Name" />
+        <input class="bg-[#282828] p-4 rounded-2xl" placeholder="Email" />
+        <input
+          class="bg-[#282828] col-span-2 p-4 rounded-2xl"
+          placeholder="Subject"
+        />
+        <textarea
+          class="bg-[#282828] resize-none col-span-2 h-[15rem] p-4 rounded-2xl"
+          placeholder="Message"
+        />
+        <button
+          class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-3xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
+        >
+          Get in touch with me
+        </button>
+        <button
+          class="self-center bg-[#303030] hover:bg-[#3b3a3a] text-3xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
+        >
+          Get in touch with me
+        </button>
+      </form>
+    </div>
+    <!-- Contact ^^^^ Above ^^^^^^ -->
   </body>
 </html>
