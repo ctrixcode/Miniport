@@ -1,12 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miniport</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        box-sizing: border-box;
+        font-family: "Source Sans Pro", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body class="scroll-smooth">
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-10 bg-[#282828] w-full p-4 flex justify-center"
+    >
+      <ul class="text-white text-xl flex gap-4">
+        <li><a href="#Hero">Home</a></li>
+        <li><a href="#Work">Work</a></li>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </header>
+    <!-- Hero -->
+    <article
+      class="flex flex-col justify-center items-center gap-4 py-32 px-4 shadow-md"
+      id="Hero"
+    >
+      <img src="./assets/sasuke.png" class="rounded-full border-4 w-96 h-96" />
+      <div class="flex flex-col gap-8 text-center">
+        <h1 class="text-6xl text-[#888]">
+          Hi. I'm <b class="text-[#3e3e3e]">Sasuke Uchiha.</b>
+        </h1>
+        <h2 class="text-xl text-[#888] max-w-[800px]">
+          And this is <b class="text-[#3e3e3e]">Miniport</b>, a free, fully
+          responsive HTML5 site template designed by AJ for HTML5 UP & released
+          under the CCA license.
+        </h2>
+        <button
+          class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-3xl text-white py-4 px-10 border-x-slate-800 shadow-sm"
+        >
+          Learn about what i do
+        </button>
+      </div>
+    </article>
+    <!-- Hero ^^^^ Above ^^^^^^ -->
+    <!-- Work -->
+    <div class="flex flex-col items-center gap-4 py-32 shadow-md" id="Work">
+      <h2 class="text-3xl text-slate-900">Here's all the stuff I do.</h2>
+      <h3 class="text-2xl text-gray-400 text-center">
+        Odio turpis amet sed consequat eget posuere consequat.
+      </h3>
+      <div>
+        <ul class="flex md:flex-row flex-col gap-8">
+          <li
+            class="flex flex-col items-center text-center py-12 px-8 max-w-xs shadow-lg"
+          >
+            <section class="h-32 w-32 bg-green-900"></section>
+            <h4 class="text-2xl md:text-3xl text-slate-900">Consequat lorem</h4>
+            <p class="text-gray-500">
+              Ornare nulla proin odio consequat sapien vestibulum ipsum primis
+              sed amet consequat lorem dolore.
+            </p>
+          </li>
+          <li
+            class="flex flex-col items-center text-center py-12 px-8 max-w-xs shadow-lg"
+          >
+            <section class="h-32 w-32 bg-green-900"></section>
+            <h4 class="text-2xl md:text-3xl text-slate-900">
+              Lorem dolor tempus
+            </h4>
+            <p class="text-gray-500">
+              Ornare nulla proin odio consequat sapien vestibulum ipsum primis
+              sed amet consequat lorem dolore.
+            </p>
+          </li>
+          <li
+            class="flex flex-col items-center text-center py-12 px-8 max-w-xs shadow-lg"
+          >
+            <section class="h-32 w-32 bg-green-900"></section>
+            <h4 class="text-2xl md:text-3xl text-slate-900">Feugiat posuere</h4>
+            <p class="text-gray-500">
+              Ornare nulla proin odio consequat sapien vestibulum ipsum primis
+              sed amet consequat lorem dolore.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <p class="text-2xl text-gray-600">
+        Lorem ipsum dolor sit sapien vestibulum ipsum primis?
+      </p>
+      <button
+        class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-3xl text-white py-4 px-10 border-x-slate-800 shadow-sm"
+      >
+        See some of my recent work
+      </button>
+    </div>
+    <!-- Work ^^^^ Above ^^^^^^ -->
+
+    <!-- Portfolio -->
+
+    <div
+      class="flex flex-col items-center gap-4 py-32 shadow-md"
+      id="Portfolio"
+    >
+      <h2 class="text-3xl text-slate-900">
+        Here’s some stuff I made recently.
+      </h2>
+      <h3 class="text-2xl text-gray-500 text-center">
+        Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.
+      </h3>
+      <div>
+        <ul class="flex md:flex-row flex-col justify-center flex-wrap gap-8">
+          <li
+            class="flex flex-col items-center text-center px-1 max-w-xs shadow-lg"
+          >
+            <img src="./assets/622977.jpg" class="w-[33vw]" />
+            <div class="py-12 px-4">
+              <h3 class="text-black m-0 text-3xl">Sasuke and Naruto</h3>
+              <p class="text-gray-700 text-xl m-0">
+                Ornare nulla proin odio consequat.
+              </p>
+            </div>
+          </li>
+          <li
+            class="flex flex-col items-center text-center px-1 max-w-xs shadow-lg"
+          >
+            <img src="./assets/709092.jpg" class="w-[33vw]" />
+            <div class="py-12 px-4">
+              <h3 class="text-black m-0 text-3xl">Madara Uchiha</h3>
+              <p class="text-gray-700 text-xl m-0">
+                Ornare nulla proin odio consequat.
+              </p>
+            </div>
+          </li>
+          <li
+            class="flex flex-col items-center text-center px-1 max-w-xs shadow-lg"
+          >
+            <img
+              src="./assets/Backgrounds-doctor-strange-movie-wide.jpg"
+              class="w-[33vw]"
+            />
+            <div class="py-12 px-4">
+              <h3 class="text-black m-0 text-3xl">Dr Strange</h3>
+              <p class="text-gray-700 text-xl m-0">
+                Ornare nulla proin odio consequat.
+              </p>
+            </div>
+          </li>
+          <li
+            class="flex flex-col items-center text-center px-1 max-w-xs shadow-lg"
+          >
+            <img
+              src="./assets/e84cb-16363923804192-1920.jpg"
+              class="w-[33vw]"
+            />
+            <div class="py-12 px-4">
+              <h3 class="text-black m-0 text-3xl">Uchiha Madara</h3>
+              <p class="text-gray-700 text-xl m-0">
+                Ornare nulla proin odio consequat.
+              </p>
+            </div>
+          </li>
+          <li
+            class="flex flex-col items-center text-center px-1 max-w-xs shadow-lg"
+          >
+            <img
+              src="./assets/pexels-dreamlens-production-1775777.jpg"
+              class="w-[33vw]"
+            />
+            <div class="py-12 px-4">
+              <h3 class="text-black m-0 text-3xl">The Moon</h3>
+              <p class="text-gray-700 text-xl m-0">
+                Ornare nulla proin odio consequat.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Portfolio ^^^^ Above ^^^^^^ -->
+  </body>
 </html>
