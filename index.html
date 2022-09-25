@@ -36,6 +36,9 @@
       .come-in {
         animation: come-in 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
       }
+      .come-in-4s {
+        animation: come-in 5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      }
 
       @keyframes come-in {
         from {
@@ -66,10 +69,10 @@
     >
       <img
         src="./assets/sasuke.png"
-        class="rounded-full border-4 w-64 h-64 md:w-96 md:h-96"
+        class="rounded-full border-4 w-64 h-64 md:w-96 md:h-96 come-in"
       />
       <div class="flex flex-col gap-8 text-center">
-        <h1 class="text-4xl md:text-6xl come-in text-[#888]">
+        <h1 class="text-4xl md:text-6xl come-in-4s text-[#888]">
           Hi. I'm <b class="text-[#3e3e3e]">Sasuke Uchiha.</b>
         </h1>
         <h2 class="text-base md:text-xl text-[#888] max-w-[800px]">
