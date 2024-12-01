@@ -1,288 +1,474 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miniport</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        box-sizing: border-box;
-        font-family: "Source Sans Pro", Arial, sans-serif;
-        text-align: center;
-      }
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Miniport</title>
+        <script src="https://cdn.tailwindcss.com"></script>
 
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #888;
-      }
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                box-sizing: border-box;
+                font-family: "Source Sans Pro", Arial, sans-serif;
+                text-align: center;
+            }
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
 
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-      .come-in {
-        animation: come-in 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      }
-      .come-in-4s {
-        animation: come-in 5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      }
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
 
-      @keyframes come-in {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    </style>
-  </head>
-  <body class="scroll-smooth">
-    <!-- Navbar -->
-    <header
-      class="sticky top-0 z-10 bg-[#282828] w-full p-4 flex justify-center"
-    >
-      <ul class="text-white text-xl flex gap-4">
-        <li><a href="#Hero">Home</a></li>
-        <li><a href="#Work">Work</a></li>
-        <li><a href="#Portfolio">Portfolio</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
-    </header>
-    <!-- Hero -->
-    <article
-      class="flex flex-col justify-center items-center gap-4 py-12 md:py-32 px-4 shadow-md"
-      id="Hero"
-    >
-      <img
-        src="./assets/sasuke.png"
-        class="rounded-full border-4 w-64 h-64 md:w-96 md:h-96 come-in"
-      />
-      <div class="flex flex-col gap-8 text-center">
-        <h1 class="text-4xl md:text-6xl come-in-4s text-[#888]">
-          Hi. I'm <b class="text-[#3e3e3e]">Sasuke Uchiha.</b>
-        </h1>
-        <h2 class="text-base md:text-xl text-[#888] max-w-[800px]">
-          And this is <b class="text-[#3e3e3e]">Miniport</b>, a free, fully
-          responsive HTML5 site template designed by AJ for HTML5 UP & released
-          under the CCA license.
-        </h2>
-        <button
-          class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-xl md:text-3xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+            .come-in {
+                animation: come-in 3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            }
+            .come-in-4s {
+                animation: come-in 5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            }
+
+            @keyframes come-in {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body class="scroll-smooth">
+        <!-- Navbar -->
+        <header
+            class="sticky top-0 z-10 bg-[#282828] w-full p-4 flex justify-center"
         >
-          Learn about what i do
-        </button>
-      </div>
-    </article>
-    <!-- Hero ^^^^ Above ^^^^^^ -->
-    <!-- Work -->
-    <div class="flex flex-col items-center gap-4 py-32 shadow-md" id="Work">
-      <h2 class="text-2xl md:text-3xl text-slate-900">
-        Here's all the stuff I do.
-      </h2>
-      <h3 class="text-xl md:text-2xl text-gray-400 text-center">
-        Odio turpis amet sed consequat eget posuere consequat.
-      </h3>
-      <div>
-        <ul class="flex md:flex-row flex-col gap-8">
-          <li
-            class="flex flex-col items-center text-center py-12 px-8 max-w-xs shadow-lg"
-          >
-            <section class="h-32 w-32 bg-green-900"></section>
-            <h4 class="text-xl md:text-3xl text-slate-900">Consequat lorem</h4>
-            <p class="text-gray-500 text-base md:text-xl">
-              Ornare nulla proin odio consequat sapien vestibulum ipsum primis
-              sed amet consequat lorem dolore.
-            </p>
-          </li>
-          <li
-            class="flex flex-col items-center text-center py-12 px-8 max-w-xs shadow-lg"
-          >
-            <section class="h-32 w-32 bg-green-900"></section>
-            <h4 class="text-xl md:text-3xl text-slate-900">
-              Lorem dolor tempus
-            </h4>
-            <p class="text-gray-500 md:text-xl">
-              Ornare nulla proin odio consequat sapien vestibulum ipsum primis
-              sed amet consequat lorem dolore.
-            </p>
-          </li>
-          <li
-            class="flex flex-col items-center text-center py-12 px-8 max-w-xs shadow-lg"
-          >
-            <section class="h-32 w-32 bg-green-900"></section>
-            <h4 class="text-xl md:text-3xl text-slate-900">Feugiat posuere</h4>
-            <p class="text-gray-500 md:text-xl">
-              Ornare nulla proin odio consequat sapien vestibulum ipsum primis
-              sed amet consequat lorem dolore.
-            </p>
-          </li>
-        </ul>
-      </div>
-      <p class="text-base md:text-2xl text-gray-600">
-        Lorem ipsum dolor sit sapien vestibulum ipsum primis?
-      </p>
-      <button
-        class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-xl md:text-3xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
-      >
-        See some of my recent work
-      </button>
-    </div>
-    <!-- Work ^^^^ Above ^^^^^^ -->
-
-    <!-- Portfolio -->
-
-    <div
-      class="flex flex-col items-center gap-4 py-12 md:py-32 shadow-md"
-      id="Portfolio"
-    >
-      <h2 class="text-2xl md:text-3xl text-slate-900">
-        Here’s some stuff I made recently.
-      </h2>
-      <h3 class="text-lg md:text-2xl text-gray-500 text-center">
-        Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.
-      </h3>
-      <div class="pt-4">
-        <ul
-          class="flex md:flex-row flex-col justify-center flex-wrap gap-8 max-w-[1100px]"
+            <ul class="text-white text-xl flex gap-4">
+                <li><a href="#Hero">Home</a></li>
+                <li><a href="#Work">Work</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </header>
+        <!-- Hero -->
+        <article
+            class="flex flex-col justify-center items-center gap-4 py-12 md:py-32 px-4 shadow-md"
+            id="Hero"
         >
-          <li
-            class="flex flex-col items-center text-center px-1 max-w-xs shadow-lg"
-          >
-            <img src="./assets/622977.jpg" class="w-full" />
-            <div class="py-12 px-4">
-              <h3 class="text-black m-0 text-3xl">Sasuke and Naruto</h3>
-              <p class="text-gray-700 text-xl m-0">
-                Ornare nulla proin odio consequat.
-              </p>
-            </div>
-          </li>
-          <li
-            class="flex flex-col items-center text-center px-1 max-w-xs shadow-lg"
-          >
-            <img src="./assets/709092.jpg" class="w-full" />
-            <div class="py-12 px-4">
-              <h3 class="text-black m-0 text-3xl">Madara Uchiha</h3>
-              <p class="text-gray-700 text-xl m-0">
-                Ornare nulla proin odio consequat.
-              </p>
-            </div>
-          </li>
-          <li
-            class="flex flex-col items-center text-center px-1 max-w-xs shadow-lg"
-          >
             <img
-              src="./assets/Backgrounds-doctor-strange-movie-wide.jpg"
-              class="w-full"
+                src="./assets/sasuke.png"
+                class="rounded-full border-4 w-64 h-64 md:w-96 md:h-96 come-in shadow-lg"
             />
-            <div class="py-12 px-4">
-              <h3 class="text-black m-0 text-3xl">Dr Strange</h3>
-              <p class="text-gray-700 text-xl m-0">
-                Ornare nulla proin odio consequat.
-              </p>
+            <div class="flex flex-col gap-8 text-center">
+                <h1 class="text-4xl md:text-6xl come-in-4s text-[#888]">
+                    Hi. I'm <span class="ityped"></span>
+                </h1>
             </div>
-          </li>
-          <li
-            class="flex flex-col items-center text-center px-1 max-w-xs shadow-lg"
-          >
-            <img src="./assets/e84cb-16363923804192-1920.jpg" class="w-full" />
-            <div class="py-12 px-4">
-              <h3 class="text-black m-0 text-3xl">Uchiha Madara</h3>
-              <p class="text-gray-700 text-xl m-0">
-                Ornare nulla proin odio consequat.
-              </p>
+            <div>
+                <h2 class="text-base md:text-xl text-[#888] max-w-[800px]">
+                    And this is <b class="text-[#3e3e3e]">Miniport</b>, a free,
+                    fully responsive HTML5 site template designed by AJ for
+                    HTML5 UP & released under the CCA license.
+                </h2>
+                <button
+                    class="self-center bg-[#43B3E0] rounded-lg hover:bg-[#3ea8d2] text-xl md:text-3xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
+                >
+                    Learn about what i do
+                </button>
             </div>
-          </li>
-          <li
-            class="flex flex-col items-center text-center px-1 max-w-xs shadow-lg"
-          >
-            <img
-              src="./assets/pexels-dreamlens-production-1775777.jpg"
-              class="w-full"
-            />
-            <div class="py-12 px-4">
-              <h3 class="text-black m-0 text-3xl">The Moon</h3>
-              <p class="text-gray-700 text-xl m-0">
-                Ornare nulla proin odio consequat.
-              </p>
+        </article>
+        <!-- Hero ^^^^ Above ^^^^^^ -->
+        <!-- Work -->
+        <div
+            class="flex flex-col items-center gap-8 py-32 bg-gray-50 shadow-lg transition-all duration-300 hover:shadow-xl"
+        >
+            <h2
+                class="text-2xl md:text-4xl text-slate-900 font-bold tracking-tight animate-fade-in-up"
+            >
+                Here's all the stuff I do.
+            </h2>
+            <h3
+                class="text-xl md:text-2xl text-gray-500 text-center max-w-2xl px-4 animate-fade-in-up animation-delay-200"
+            >
+                Odio turpis amet sed consequat eget posuere consequat.
+            </h3>
+            <div class="w-full px-4">
+                <ul
+                    class="flex md:flex-row flex-col justify-center items-center gap-8"
+                >
+                    <li
+                        class="flex flex-col items-center text-center py-12 px-8 max-w-xs bg-white rounded-2xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group"
+                    >
+                        <section
+                            class="h-32 w-32 bg-green-900 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300"
+                        ></section>
+                        <h4
+                            class="text-xl md:text-3xl text-slate-900 font-semibold mb-4 group-hover:text-green-900 transition-colors duration-300"
+                        >
+                            Consequat lorem
+                        </h4>
+                        <p
+                            class="text-gray-500 text-base md:text-xl opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                        >
+                            Ornare nulla proin odio consequat sapien vestibulum
+                            ipsum primis sed amet consequat lorem dolore.
+                        </p>
+                    </li>
+                    <li
+                        class="flex flex-col items-center text-center py-12 px-8 max-w-xs bg-white rounded-2xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group"
+                    >
+                        <section
+                            class="h-32 w-32 bg-green-900 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300"
+                        ></section>
+                        <h4
+                            class="text-xl md:text-3xl text-slate-900 font-semibold mb-4 group-hover:text-green-900 transition-colors duration-300"
+                        >
+                            Lorem dolor tempus
+                        </h4>
+                        <p
+                            class="text-gray-500 text-base md:text-xl opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                        >
+                            Ornare nulla proin odio consequat sapien vestibulum
+                            ipsum primis sed amet consequat lorem dolore.
+                        </p>
+                    </li>
+                    <li
+                        class="flex flex-col items-center text-center py-12 px-8 max-w-xs bg-white rounded-2xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group"
+                    >
+                        <section
+                            class="h-32 w-32 bg-green-900 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300"
+                        ></section>
+                        <h4
+                            class="text-xl md:text-3xl text-slate-900 font-semibold mb-4 group-hover:text-green-900 transition-colors duration-300"
+                        >
+                            Feugiat posuere
+                        </h4>
+                        <p
+                            class="text-gray-500 text-base md:text-xl opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                        >
+                            Ornare nulla proin odio consequat sapien vestibulum
+                            ipsum primis sed amet consequat lorem dolore.
+                        </p>
+                    </li>
+                </ul>
             </div>
-          </li>
-        </ul>
-      </div>
-      <p class="text-base md:text-2xl text-gray-600">
-        Lorem ipsum dolor sit sapien vestibulum ipsum primis?
-      </p>
-      <button
-        class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-xl md:text-3xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
-      >
-        Get in touch with me
-      </button>
-    </div>
-    <!-- Portfolio ^^^^ Above ^^^^^^ -->
+            <p
+                class="text-base md:text-2xl text-gray-600 text-center px-4 animate-fade-in-up animation-delay-400"
+            >
+                Lorem ipsum dolor sit sapien vestibulum ipsum primis?
+            </p>
+            <button
+                class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-xl md:text-3xl text-white py-2 px-6 md:py-4 md:px-10 rounded-lg shadow-md hover:shadow-xl transform active:scale-95 transition-all duration-300"
+            >
+                See some of my recent work
+            </button>
+        </div>
 
-    <!-- Contact -->
-    <div
-      class="flex flex-col items-center gap-4 py-12 md:py-32 shadow-md bg-[#303030] text-white"
-      id="Contact"
-    >
-      <h2 class="text-2xl md:text-4xl text-white">
-        Have me make stuff for you.
-      </h2>
-      <h3 class="text-xl md:text-2xl text-gray-500 text-center">
-        Ornare nulla proin odio consequat sapien vestibulum ipsum.
-      </h3>
-      <form
-        class="flex flex-col md:grid md:grid-cols-2 gap-4 text-[#bbb] text-base md:text-xl p-2 w-full md:max-w-[1000px]"
-      >
-        <input class="bg-[#282828] p-4 rounded-2xl" placeholder="Name" />
-        <input class="bg-[#282828] p-4 rounded-2xl" placeholder="Email" />
-        <input
-          class="bg-[#282828] col-span-2 p-4 rounded-2xl"
-          placeholder="Subject"
-        />
-        <textarea
-          class="bg-[#282828] resize-none col-span-2 h-[15rem] p-4 rounded-2xl"
-          placeholder="Message"
+        <!-- Custom Animations (you'll need to add these to your tailwind.config.js) -->
+        <style>
+            @keyframes fade-in-up {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .animate-fade-in-up {
+                animation: fade-in-up 0.8s ease-out;
+            }
+
+            .animation-delay-200 {
+                animation-delay: 0.2s;
+            }
+
+            .animation-delay-400 {
+                animation-delay: 0.4s;
+            }
+        </style>
+        <!-- Work ^^^^ Above ^^^^^^ -->
+
+        <!-- Portfolio -->
+
+        <div
+            class="flex flex-col items-center gap-4 py-12 md:py-32 shadow-md"
+            id="Portfolio"
         >
-        </textarea>
-      </form>
-      <div class="py-2 flex flex-row">
-        <button
-          class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] rounded-xl text-xl md:text-2xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
+            <h2 class="text-2xl md:text-3xl text-slate-900">
+                Here’s some stuff I made recently.
+            </h2>
+            <h3 class="text-lg md:text-2xl text-gray-500 text-center">
+                Proin odio consequat sapien vestibulum consequat lorem dolore
+                feugiat.
+            </h3>
+            <div class="container mx-auto px-4 py-8">
+                <ul
+                    class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 max-w-[1400px] mx-auto"
+                >
+                    <li
+                        class="group bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-4 hover:shadow-2xl"
+                    >
+                        <div class="relative overflow-hidden">
+                            <img
+                                src="./assets/622977.jpg"
+                                class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"
+                            ></div>
+                        </div>
+                        <div
+                            class="py-12 px-4 text-center bg-white transition-colors duration-300 group-hover:bg-gray-50"
+                        >
+                            <h3
+                                class="text-black m-0 text-3xl mb-4 transition-colors duration-300 group-hover:text-blue-600"
+                            >
+                                Sasuke and Naruto
+                            </h3>
+                            <p
+                                class="text-gray-700 text-xl m-0 transition-colors duration-300 group-hover:text-gray-900"
+                            >
+                                Ornare nulla proin odio consequat.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li
+                        class="group bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-4 hover:shadow-2xl"
+                    >
+                        <div class="relative overflow-hidden">
+                            <img
+                                src="./assets/709092.jpg"
+                                class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"
+                            ></div>
+                        </div>
+                        <div
+                            class="py-12 px-4 text-center bg-white transition-colors duration-300 group-hover:bg-gray-50"
+                        >
+                            <h3
+                                class="text-black m-0 text-3xl mb-4 transition-colors duration-300 group-hover:text-blue-600"
+                            >
+                                Madara Uchiha
+                            </h3>
+                            <p
+                                class="text-gray-700 text-xl m-0 transition-colors duration-300 group-hover:text-gray-900"
+                            >
+                                Ornare nulla proin odio consequat.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li
+                        class="group bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-4 hover:shadow-2xl"
+                    >
+                        <div class="relative overflow-hidden">
+                            <img
+                                src="./assets/Backgrounds-doctor-strange-movie-wide.jpg"
+                                class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"
+                            ></div>
+                        </div>
+                        <div
+                            class="py-12 px-4 text-center bg-white transition-colors duration-300 group-hover:bg-gray-50"
+                        >
+                            <h3
+                                class="text-black m-0 text-3xl mb-4 transition-colors duration-300 group-hover:text-blue-600"
+                            >
+                                Dr Strange
+                            </h3>
+                            <p
+                                class="text-gray-700 text-xl m-0 transition-colors duration-300 group-hover:text-gray-900"
+                            >
+                                Ornare nulla proin odio consequat.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li
+                        class="group bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-4 hover:shadow-2xl"
+                    >
+                        <div class="relative overflow-hidden">
+                            <img
+                                src="./assets/e84cb-16363923804192-1920.jpg"
+                                class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"
+                            ></div>
+                        </div>
+                        <div
+                            class="py-12 px-4 text-center bg-white transition-colors duration-300 group-hover:bg-gray-50"
+                        >
+                            <h3
+                                class="text-black m-0 text-3xl mb-4 transition-colors duration-300 group-hover:text-blue-600"
+                            >
+                                Uchiha Madara
+                            </h3>
+                            <p
+                                class="text-gray-700 text-xl m-0 transition-colors duration-300 group-hover:text-gray-900"
+                            >
+                                Ornare nulla proin odio consequat.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li
+                        class="group bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-4 hover:shadow-2xl"
+                    >
+                        <div class="relative overflow-hidden">
+                            <img
+                                src="./assets/pexels-dreamlens-production-1775777.jpg"
+                                class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"
+                            ></div>
+                        </div>
+                        <div
+                            class="py-12 px-4 text-center bg-white transition-colors duration-300 group-hover:bg-gray-50"
+                        >
+                            <h3
+                                class="text-black m-0 text-3xl mb-4 transition-colors duration-300 group-hover:text-blue-600"
+                            >
+                                The Moon
+                            </h3>
+                            <p
+                                class="text-gray-700 text-xl m-0 transition-colors duration-300 group-hover:text-gray-900"
+                            >
+                                Ornare nulla proin odio consequat.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li
+                        class="group bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-4 hover:shadow-2xl"
+                    >
+                        <div class="relative overflow-hidden">
+                            <img
+                                src="./assets/images.jpeg"
+                                class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"
+                            ></div>
+                        </div>
+                        <div
+                            class="py-12 px-4 text-center bg-white transition-colors duration-300 group-hover:bg-gray-50"
+                        >
+                            <h3
+                                class="text-black m-0 text-3xl mb-4 transition-colors duration-300 group-hover:text-blue-600"
+                            >
+                                Jusice Pelado
+                            </h3>
+                            <p
+                                class="text-gray-700 text-xl m-0 transition-colors duration-300 group-hover:text-gray-900"
+                            >
+                                !mood off hai mera
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <p class="text-base md:text-2xl text-gray-600">
+                Lorem ipsum dolor sit sapien vestibulum ipsum primis?
+            </p>
+            <button
+                class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] text-xl md:text-3xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
+            >
+                Get in touch with me
+            </button>
+        </div>
+        <!-- Portfolio ^^^^ Above ^^^^^^ -->
+
+        <!-- Contact -->
+        <div
+            class="flex flex-col items-center gap-4 py-12 md:py-32 shadow-md bg-[#303030] text-white"
+            id="Contact"
         >
-          Send Message
-        </button>
-        <button
-          class="self-center bg-[#3b3b3b] hover:bg-[#413f3f] text-xl md:text-2xl rounded-xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
-        >
-          Clear Form
-        </button>
-      </div>
-      <div
-        class="flex flex-col gap-8 border-y border-[#999] text-sm md:text-3xl py-12"
-      >
-        <h5>Find me on ...</h5>
-        <section class="flex gap-8">
-          <a class="hover:underline hover:text-red-800">What's App</a>
-          <a class="hover:underline hover:text-red-800">Facebook</a>
-          <a class="hover:underline hover:text-red-800">Instagram</a>
-          <a class="hover:underline hover:text-red-800">Github</a>
-        </section>
-      </div>
-    </div>
-    <!-- Contact ^^^^ Above ^^^^^^ -->
-  </body>
+            <h2 class="text-2xl md:text-4xl text-white">
+                Have me make stuff for you.
+            </h2>
+            <h3 class="text-xl md:text-2xl text-gray-500 text-center">
+                Ornare nulla proin odio consequat sapien vestibulum ipsum.
+            </h3>
+            <form
+                class="flex flex-col md:grid md:grid-cols-2 gap-4 text-[#bbb] text-base md:text-xl p-2 w-full md:max-w-[1000px]"
+            >
+                <input
+                    class="bg-[#282828] p-4 rounded-2xl"
+                    placeholder="Name"
+                />
+                <input
+                    class="bg-[#282828] p-4 rounded-2xl"
+                    placeholder="Email"
+                />
+                <input
+                    class="bg-[#282828] col-span-2 p-4 rounded-2xl"
+                    placeholder="Subject"
+                />
+                <textarea
+                    class="bg-[#282828] resize-none col-span-2 h-[15rem] p-4 rounded-2xl"
+                    placeholder="Message"
+                >
+                </textarea>
+            </form>
+            <div class="py-2 flex flex-row">
+                <button
+                    class="self-center bg-[#43B3E0] hover:bg-[#3ea8d2] rounded-xl text-xl md:text-2xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
+                >
+                    Send Message
+                </button>
+                <button
+                    class="self-center bg-[#3b3b3b] hover:bg-[#413f3f] text-xl md:text-2xl rounded-xl text-white py-2 px-6 md:py-4 md:px-10 border-x-slate-800 shadow-sm"
+                >
+                    Clear Form
+                </button>
+            </div>
+            <div
+                class="flex flex-col gap-8 border-y border-[#999] text-sm md:text-3xl py-12"
+            >
+                <h5>Find me on ...</h5>
+                <section class="flex gap-8">
+                    <a class="hover:underline hover:text-red-800">What's App</a>
+                    <a class="hover:underline hover:text-red-800">Facebook</a>
+                    <a class="hover:underline hover:text-red-800">Instagram</a>
+                    <a class="hover:underline hover:text-red-800">Github</a>
+                </section>
+            </div>
+        </div>
+        <!-- Contact ^^^^ Above ^^^^^^ -->
+        <script src="https://unpkg.com/ityped@0.0.10"></script>
+        <script>
+            window.ityped.init(document.querySelector(".ityped"), {
+                strings: [
+                    "I love programming!",
+                    "I make web sites using react and go",
+                    "It is very interesting!",
+                    "Anmol is my dad, I am inspired from him ",
+                ],
+                loop: true,
+            });
+        </script>
+    </body>
 </html>
